@@ -1,10 +1,14 @@
 {
-  "name": "atw",
+  "name": "@codatax/atw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codatax/atw.git"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "publishConfig": {
-    "registry": "hhtps://npm.pkg.github.com/@codatax"
+    "registry": "https://npm.pkg.github.com/"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
