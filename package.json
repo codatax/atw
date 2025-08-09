@@ -1,0 +1,15 @@
+{
+  "name": "atw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "publishConfig": {
+    "registry": "hhtps://npm.pkg.github.com/@codatax"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Codatax",
+  "license": "ISC"
+}
