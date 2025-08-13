@@ -3,8 +3,7 @@
 Dit package past de regels van de Algemene termijnenwet (hierna: Atw) toe bij de berekening van een termijn. Deze regels zijn van toepassing wanneer de einddatum van een termijn op een zaterdag, zondag of algemeen erkende feestdag eindigt.
 
 ## Classes
-
-## Art. 1
+### Art. 1
 **Property**
 - _endDate_: Einddatum (Date).
 - _termDays_: Termijn in dagen (Integer).
@@ -13,7 +12,7 @@ Dit package past de regels van de Algemene termijnenwet (hierna: Atw) toe bij de
 - _Art1Par1(endDate)_: Verlengt de eindtermijn (endDate), als deze op een zaterdag, zondag of algemeen erkende feestdag eindigt, tot en met de eerstvolgende dag die niet een zaterdag, zondag of feestdag is.
 - _Art1Par2(endDate, termDays)_: Maakt de verlenging ongedaan wanneer de termijn is bepaald door terugrekening vanaf een tijdstip of een gebeurtenis (term < 0).
 
-## Art. 2 
+### Art. 2 
 **Property**
 - _endDate_: Einddatum (Date).
 - _termDays_: Termijn in dagen (Integer).
@@ -21,13 +20,13 @@ Dit package past de regels van de Algemene termijnenwet (hierna: Atw) toe bij de
 **Methods**
 - _Art2(startDate, term)_: Verlengt een in de wet gestelde termijn van tenminste drie dagen zo nodig dat in de termijn ten minste twee dagen voorkomen die niet een zaterdag, zondag of een algemeen erkende feestdag zijn.
 
-## Art. 3
+### Art. 3
 **Property**
 - _holidaysPar1_: Nieuwjaarsdag, de Christelijke tweede Paas- en Pinksterdag, de beide Kerstdagen, de Hemelvaartsdag, de dag waarop de verjaardag van de Koning wordt gevierd en de vijfde mei (Date).
 - _holidaysPar2_: Goede Vrijdag (Date).
 - _holidaysPar3_: Gepubliceerd in de Nederlandse Staatscourant (Date).
 
-## Art. 4
+### Art. 4
 **Property**
 - _term_: Aantal van de termijnbeschrijving (Integer).
 - _termDescription_: Beschrijving termijn (String: {hours, days, weaks, months, years, other}).
