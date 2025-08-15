@@ -1,9 +1,8 @@
 //Article 1
 class Art1 {
-  constructor({endDate, term, termUnit}){
+  constructor({endDate, term}){
     this.endDate = new Date(endDate);
     this.term = term;
-    this.termUnit= termUnit; //hour, day, week, month, year
     this.newEndDate = new Date(endDate);
   }
 
@@ -32,8 +31,10 @@ class Art2 {
     this.startDate = new Date(this.endDate);
   }
 
+  
   Art2(){
     switch(this.termUnit) {
+      
       case 'hour':
         this.startDate.setHours(this.startDate.getHours() - this.term)
         // console.log('in uren')

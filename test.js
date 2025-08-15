@@ -1,9 +1,8 @@
 const { Art1, Art2, Art4 }= require('./index')
 
 example_art1 = new Art1({
-  endDate:'2025-04-18',
-  term: 10, 
-  termUnit:'day'
+  endDate:'2025-04-21',
+  term: 3, 
 })
 example_art1.Art1Par1()
 example_art1.Art1Par2()
@@ -13,7 +12,7 @@ example_art1.Art1Par2()
 example_art2 = new Art2({
   endDate: example_art1.endDate, 
   term: example_art1.term, 
-  termUnit: example_art1.termUnit,
+  termUnit: 'day',
   newEndDate: example_art1.newEndDate
 })
 example_art2.Art2()
@@ -21,11 +20,11 @@ example_art2.Art2()
 // console.log('Na toepassing artikel 2', example_art2)
 
 example_art4 = new Art4({
-    endDate: example_art1.endDate, 
-    term: example_art1.term, 
-    termUnit: example_art1.termUnit,
+    endDate: example_art2.endDate, 
+    term: example_art2.term, 
+    termUnit: example_art2.termUnit,
     newEndDate: example_art2.newEndDate,
-    dumParB: false,
+    dumParB: true,
     dumParC: false,
 })
 example_art4.Art4()
